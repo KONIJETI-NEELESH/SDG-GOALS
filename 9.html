@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SDG GOALS</title>
+    <style>
+	body
+	{
+		background-image: url('577.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: max-content;
+		margin: 0;
+		border: 0;
+	}
+	.node {
+		cursor: pointer;
+	}
+	.node circle {
+	  fill: white;
+	  stroke: white;
+	  stroke-width: 3px;
+	}
+	.node text {
+	  font: 12px sans-serif;
+	}
+	.link {
+	  fill: none;
+	  stroke: white;
+	  stroke-width: 2px;
+	}
+	div.tool {
+		position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+                /* width: rem; */
+                height: 2vh;
+                padding: 0.8rem;
+                font: 12px sans-serif;
+                background: white;
+				color: black;
+                border: solid 1px black;
+                /* border-radius: 0.9rem; */
+                pointer-events: none;
+            }
+	.contain
+	{
+	 position: fixed;
+	 display: flex;
+	 flex-direction: column;
+	 width: 6.5vh;
+	 height: 100vh;
+	 flex-wrap: nowrap;
+	 background-color: white;
+	 cursor: pointer;
+	 border-right: 0.3rem solid black;
+	 color: limegreen;
+	}
+	.side
+	{
+	 width: 100%;
+	 height: 5.93vh;
+	}
+	a
+	{
+	 line-height: 0%;
+	 width: 5.93vh;
+	 height: 5.93vh;
+	 padding: 0%;
+	}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	</head>
+  <body>
+	<div id="div">
+		<div class="contain">
+			<a href="1.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 1: No Poverty"><img id="sdg1" class="side" src="https://thumbs.dreamstime.com/b/no-poverty-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-ad-web-mobile-app-promo-175200311.jpg" alt=""></a>
+			<a href="2.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 2: Zero Hunger"><img id="sdg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUVD55GlZRXoh_UAsHARZTHIb6_3VbzLLLw&usqp=CAU" alt="" class="side"></a>
+			<a href="3.html" style="padding: 0%; border: 0; margin: 0%; background-color: white;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 3: Good Health"><img id="sdg3" src="https://aviationbenefits.org/media/166124/goodhealthandwellbeing.png" alt="" class="side"></a>
+			<a href="4.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 4: Quality Education"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR670LpkqjHBrUisJb9qrb0aIqK_BFxK4I7JQ&usqp=CAU" alt="" class="side" id="sdg4"></a>
+			<a href="5.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 5:Gender Equality"><img src="https://thumbs.dreamstime.com/b/gender-equality-color-icon-women-s-rights-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-ad-175199589.jpg" alt="" class="side" id="sdg5"></a>
+			<a href="6.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 6: Clean Water and Sanitation"><img src="https://thumbs.dreamstime.com/b/clean-water-sanitation-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-ad-web-175201307.jpg" alt="" class="side" id="sdg6"></a>
+			<a href="7.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 7: Renewable Energy"><img src="https://thumbs.dreamstime.com/b/affordable-clean-energy-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-ad-web-175199208.jpg" alt="" class="side" id="sdg7"></a>
+			<a href="8.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 8: Good Jobs and Economic Growth"><img src="https://thumbs.dreamstime.com/b/decent-work-economic-growth-color-line-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-175199024.jpg" alt="" class="side" id="sdg8"></a>	
+			<a href="#" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 9: Industry, Innovation and Infrastructure"><img src="https://thumbs.dreamstime.com/b/industry-innovation-infrastructure-color-button-corporate-social-responsibility-sustainable-development-goals-sdg-sign-175197588.jpg" alt="" class="side" id="sdg9"></a>
+			<a href="10.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 10: Reduced Inequalities"><img src="https://thumbs.dreamstime.com/b/reduced-inequalities-color-icon-corporate-social-responsibility-sustainable-development-goals-reduced-inequalities-color-icon-220066950.jpg" alt="" class="side" id="sdg10"></a>
+			<a href="11.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 11: Sustainable Cities and Communities"><img src="https://thumbs.dreamstime.com/b/sustainable-cities-communities-black-icon-creating-career-business-opportunities-safe-affordable-housing-corporate-220077795.jpg" alt="" class="side" id="sdg11"></a>
+			<a href="12.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 12: Responsible Consumption"><img src="https://thumbs.dreamstime.com/b/responsible-consumption-production-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-reduce-175194457.jpg" alt="" class="side" id="sdg12"></a>
+			<a href="13.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 13: Climate Action"><img src="https://thumbs.dreamstime.com/b/climate-action-color-icon-corporate-social-responsibility-sustainable-development-goals-climate-action-color-icon-corporate-social-220067017.jpg" alt="" class="side" id="sdg13"></a>
+			<a href="14.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 14: Life Below Water"><img src="https://thumbs.dreamstime.com/b/life-below-water-color-icon-corporate-social-responsibility-sustainable-development-goals-life-below-water-color-icon-corporate-220067000.jpg" alt="" class="side" id="sdg14"></a>
+			<a href="15.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 15: Life On Land"><img src="https://thumbs.dreamstime.com/b/life-land-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-ad-web-ui-ux-design-175197961.jpg" alt="" class="side" id="sdg15"></a>
+			<a href="16.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 16: Peace and Justice"><img src="https://thumbs.dreamstime.com/b/peace-justice-strong-institutions-color-icon-corporate-social-responsibility-sustainable-development-goals-sdg-sign-pictogram-175198306.jpg" alt="" class="side" id="sdg16"></a>	
+			<a href="17.html" style="padding: 0%; border: 0; margin: 0%;" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SDG 17: Partnership for the Goals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uVaDcADIZHCE5T3o0-Zu9YN4lLy_IqzjKg&usqp=CAU" alt="" class="side" id="sdg17"></a>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+		<script src="script9.js"></script>
+	</div>
+	</body>
+</html>
