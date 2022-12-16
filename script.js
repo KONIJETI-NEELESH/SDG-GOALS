@@ -1,75 +1,327 @@
-const sdg1 = document.querySelector("#sdg1")
-const sdg2 = document.querySelector("#sdg2")
-const sdg3 = document.querySelector("#sdg3")
-const sdg4 = document.querySelector("#sdg4")
-const sdg5 = document.querySelector("#sdg5")
-const sdg6 = document.querySelector("#sdg6")
-const sdg7 = document.querySelector("#sdg7")
-const sdg8 = document.querySelector("#sdg8")
-const sdg9 = document.querySelector("#sdg9")
-const sdg10 = document.querySelector("#sdg10")
-const sdg11 = document.querySelector("#sdg11")
-const sdg12 = document.querySelector("#sdg12")
-const sdg13 = document.querySelector("#sdg13")
-const sdg14 = document.querySelector("#sdg14")
-const sdg15 = document.querySelector("#sdg15")
-const sdg16 = document.querySelector("#sdg16")
-const sdg17 = document.querySelector("#sdg17")
-const src1 = document.querySelector("#src1")
-const src2 = document.querySelector("#src2")
-const src = document.querySelector("#src")
-sdg1.addEventListener('click',()=>{
-    src1.src = "script1.js"
-    src2.classList.add("SRC2")
-    src2.src=""
-})
-sdg2.addEventListener("click",()=>{
-    src2.src = "script2.js"
-    src1.classList.add("SRC1")
-    src1.src=""
-})
-sdg3.addEventListener("click",()=>{
-    src.src = "script3.js"
-})
-sdg4.addEventListener("click",()=>{
-    src.src = "script4.js"
-})
-sdg5.addEventListener("click",()=>{
-    src.src = "script5.js"
-})
-// sdg6.addEventListener("click",()=>{
-//     src.src = "script6.js"
-// })
-// sdg7.addEventListener("click",()=>{
-//     src.src = "script7.js"
-// })
-// sdg8.addEventListener("click",()=>{
-//     src.src = "script8.js"
-// })
-// sdg9.addEventListener("click",()=>{
-//     src.src = "script9.js"
-// })
-// sdg10.addEventListener("click",()=>{
-//     src.src = "script10.js"
-// })
-// sdg11.addEventListener("click",()=>{
-//     src.src = "script11.js"
-// })
-// sdg12.addEventListener("click",()=>{
-//     src.src = "script12.js"
-// })
-// sdg13.addEventListener("click",()=>{
-//     src.src = "script13.js"
-// })
-// sdg14.addEventListener("click",()=>{
-//     src.src = "script14.js"
-// })
-// sdg15.addEventListener("click",()=>{
-//     src.src = "script15.js"
-// })
-// sdg16.addEventListener("click",()=>{
-//     src.src = "script16.js"
-// })
-// sdg17.addEventListener("click",()=>{
-//     src.src = "script17.js"
-// })
+var treeData = [
+    {
+      name: "GOAL 1",
+      parent: "null",
+      children: [
+        {
+          name: "Target 1.1",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.1.1",
+              parent: "Target 1.1",
+            },
+            {
+              name: "Target 1.1.2",
+              parent: "Target 1.1",
+            },
+          ],
+        },
+        {
+          name: "Target 1.2",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.2.1",
+              parent: "1.2",
+            },
+            {
+              name: "Target 1.2.2",
+              parent: "Target 1.2",
+            },
+          ],
+        },
+        {
+          name: "Target 1.3",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.3.1",
+              parent: "Target 1.3",
+              children: [
+                {
+                  name: "Target 1.3.1.1",
+                  parent: "Target 1.3.1",
+                  children: [
+                    {
+                      name: "Target 1.3.1.1.1",
+                      parent: "Target 1.3.1.1",
+                    },
+                    {
+                      name: "Target 1.3.1.1.2",
+                      parent: "Target 1.3.1.1",
+                    },
+                  ],
+                },
+                {
+                  name: "Target 1.3.2",
+                  parent: "Target 1.3",
+                  children: [
+                    {
+                      name: "Target 1.3.2.1",
+                      parent: "Target 1.3.2",
+                    },
+                    {
+                      name: "Target 1.3.2.2",
+                      parent: "Target 1.3.2",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: "Target 1.3.2",
+              parent: "Target 1.3",
+            },
+          ],
+        },
+        {
+          name: "Target 1.4",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.4.1",
+              parent: "Target 1.4",
+            },
+            {
+              name: "Target 1.4.2",
+              parent: "Target 1.4",
+              children: [
+                {
+                  name: "Target 1.4.2.1",
+                  parent: "Target 1.4.2",
+                  children: [
+                    {
+                      name: "Target 1.4.2.1.1",
+                      parent: "Target 1.4.2.1",
+                    },
+                    {
+                      name: "Target 1.4.2.1.2",
+                      parent: "Target 1.4.2.1",
+                    },
+                  ],
+                },
+                {
+                  name: "Target 1.4.2.2",
+                  parent: "Target 1.4.2",
+                  children: [
+                    {
+                      name: "Target 1.4.2.2.1",
+                      parent: "Target 1.4.2.2",
+                    },
+                    {
+                      name: "Target 1.4.2.2.2",
+                      parent: "Target 1.4.2.2",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: "Target 1.5",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.5.1",
+              parent: "Target 1.5",
+            },
+            {
+              name: "Target 1.5.2",
+              parent: "Target 1.5",
+            },
+          ],
+        },
+        {
+          name: "Target 1.6",
+          parent: "GOAL 1",
+          children: [
+            {
+              name: "Target 1.6.1",
+              parent: "Target 1.6",
+            },
+            {
+              name: "Target 1.6.2",
+              parent: "Target 1.6",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+  var margin = { top: 50, right: 120, bottom: 0, left: 200 },
+    width = 960 - margin.right - margin.left,
+    height = 700 - margin.top - margin.bottom;
+  
+  var i = 0,
+    duration = 750,
+    root;
+  
+  var tree = d3.layout.tree().size([height, width]);
+  
+  var diagonal = d3.svg.diagonal().projection(function (d) {
+    return [d.y, d.x];
+  });
+  
+  var svg = d3
+    .select("body")
+    .append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  
+  var div = d3
+    .select("body")
+    .append("div")
+    .attr("class", "tool")
+    .style("opacity", 1e-6);
+  
+  root = treeData[0];
+  root.x0 = height / 2;
+  root.y0 = 0;
+  
+  update(root);
+  
+  d3.select(self.frameElement).style("height", "500px");
+  
+  function update(source) {
+    // Compute the new tree layout.
+    var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+  
+    // Normalize for fixed-depth.
+    nodes.forEach(function (d) {
+      d.y = d.depth * 180;
+    });
+  
+    // Update the nodes…
+    var node = svg.selectAll("g.node").data(nodes, function (d) {
+      return d.id || (d.id = ++i);
+    });
+  
+    // Enter any new nodes at the parent's previous position.
+    var nodeEnter = node
+      .enter()
+      .append("g")
+      .attr("class", "node")
+      .attr("transform", function (d) {
+        return "translate(" + source.y0 + "," + source.x0 + ")";
+      })
+      .on("click", click);
+  
+    nodeEnter
+      .append("circle")
+      .attr("r", 1e-6)
+      .on("mouseover", () => {
+        div.transition().duration(300).style("opacity", 1);
+      })
+      .on("mousemove", (d) => {
+        div
+          .text(`${d.name}`)
+          .style("left", `${d3.event.pageX}px`)
+          .style("top", `${d3.event.pageY}px`);
+      })
+      .on("mouseout", () => {
+        div.transition().duration(300).style("opacity", 1e-6);
+      })
+      .style("fill", function (d) {
+        return d.children ? "red" : "red";
+      });
+  
+    nodeEnter
+      .append("text")
+      .attr("x", function (d) {
+        return d.children || d._children ? -20 : -20;
+      })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function (d) {
+        return d.children || d._children ? "end" : "end";
+      })
+      .text(function (d) {
+        return d.name;
+      })
+      .style("fill-opacity", 1e-6);
+  
+    // Transition nodes to their new position.
+    var nodeUpdate = node
+      .transition()
+      .duration(duration)
+      .attr("transform", function (d) {
+        return "translate(" + d.y + "," + d.x + ")";
+      });
+  
+    nodeUpdate
+      .select("circle")
+      .attr("r", 10)
+      .style("fill", function (d) {
+        return d.children ? "red" : "red";
+      });
+  
+    nodeUpdate.select("text").style("fill-opacity", 1);
+  
+    // Transition exiting nodes to the parent's new position.
+    var nodeExit = node
+      .exit()
+      .transition()
+      .duration(duration)
+      .attr("transform", function (d) {
+        return "translate(" + source.y + "," + source.x + ")";
+      })
+      .remove();
+  
+    nodeExit.select("circle").attr("r", 1e-6);
+  
+    nodeExit.select("text").style("fill-opacity", 1e-6);
+  
+    // Update the links…
+    var link = svg.selectAll("path.link").data(links, function (d) {
+      return d.target.id;
+    });
+  
+    // Enter any new links at the parent's previous position.
+    link
+      .enter()
+      .insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function (d) {
+        var o = { x: source.x0, y: source.y0 };
+        return diagonal({ source: o, target: o });
+      });
+  
+    // Transition links to their new position.
+    link.transition().duration(duration).attr("d", diagonal);
+  
+    // Transition exiting nodes to the parent's new position.
+    link
+      .exit()
+      .transition()
+      .duration(duration)
+      .attr("d", function (d) {
+        var o = { x: source.x, y: source.y };
+        return diagonal({ source: o, target: o });
+      })
+      .remove();
+  
+    // Stash the old positions for transition.
+    nodes.forEach(function (d) {
+      d.x0 = d.x;
+      d.y0 = d.y;
+    });
+  }
+  
+  // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+      d._children = d.children;
+      d.children = null;
+    } else {
+      d.children = d._children;
+      d._children = null;
+    }
+    update(d);
+  }
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
