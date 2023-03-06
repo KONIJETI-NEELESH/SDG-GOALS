@@ -1,0 +1,92 @@
+*
+{
+ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+ box-sizing: border-box;
+ font-size: 0.9rem;
+ letter-spacing: 1px;
+}
+#logo1
+{
+ position: fixed;
+ display: flex;
+ left: 60px;
+ top: 100px;
+}
+body
+{
+ background-image: url('577.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ width: max-content;
+ margin: 0;
+ border: 0;
+}
+.node 
+{
+ cursor: pointer;
+}
+.node circle 
+{
+ fill: white;
+ stroke: white;
+ stroke-width: 3px;
+}
+.node text 
+{
+ font: 12px sans-serif;
+}
+.link 
+{
+ fill: none;
+ stroke: white;
+ stroke-width: 2px;
+}
+div.tool 
+{
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 2vh;
+ padding: 0.8rem;
+ font: 12px sans-serif;
+ background: white;
+ color: black;
+ border: solid 1px black;
+ pointer-events: none;
+}
+.contain
+{
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ width: 6.45vh;
+ height: 100vh;
+ flex-wrap: nowrap;
+ background-color: white;
+ cursor: pointer;
+ border-right: 0.5rem solid rgba(0, 0, 0, 0.750);
+ color: limegreen;
+}
+.side
+{
+ width: 100%;
+ height: 5.93vh;
+}
+a
+{
+ line-height: 0%;
+ width: 5.93vh;
+ height: 5.93vh;
+ padding: 0%;
+}
+body
+{
+ position: relative;;
+}
+#logo
+{
+ position: fixed;
+ left: 6.3vh;
+}

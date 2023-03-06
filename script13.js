@@ -150,8 +150,8 @@ var treeData = [
       ],
     },
   ];
-  var margin = { top: 50, right: 120, bottom: 0, left: 200 },
-    width = 960 - margin.right - margin.left,
+  var margin = { top: 25, right: 120, bottom: 0, left: 250 },
+    width = 1080 - margin.right - margin.left,
     height = 700 - margin.top - margin.bottom;
   
   var i = 0,

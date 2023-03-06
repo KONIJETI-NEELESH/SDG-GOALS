@@ -150,8 +150,8 @@ var treeData = [
       ],
     },
   ];
-  var margin = { top: 50, right: 120, bottom: 0, left: 200 },
-    width = 960 - margin.right - margin.left,
+  var margin = { top: 25, right: 120, bottom: 0, left: 250 },
+    width = 1080 - margin.right - margin.left,
     height = 700 - margin.top - margin.bottom;
   
   var i = 0,
@@ -227,7 +227,7 @@ var treeData = [
         div.transition().duration(300).style("opacity", 1e-6);
       })
       .style("fill", function (d) {
-        return d.children ? " rgb(224, 16, 51)" : " rgb(224, 16, 51)";
+        return d.children ? "  rgb(231, 56, 86)" : "  rgb(231, 56, 86)";
       });
   
     nodeEnter
@@ -256,7 +256,7 @@ var treeData = [
       .select("circle")
       .attr("r", 10)
       .style("fill", function (d) {
-        return d.children ? " rgb(224, 16, 51)" : " rgb(224, 16, 51)";
+        return d.children ? "  rgb(231, 56, 86)" : "  rgb(231, 56, 86)";
       });
   
     nodeUpdate.select("text").style("fill-opacity", 1);
