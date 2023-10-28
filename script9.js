@@ -150,6 +150,14 @@ var treeData = [
       ],
     },
   ];
+
+  const logo = document.getElementById('pic')
+  logo.style.transform = "rotate(0deg)"
+  setInterval(()=>
+  {
+   logo.style.transform = (logo.style.transform + "rotate(0.5deg)");
+  },10)
+
   var margin = { top: 25, right: 120, bottom: 0, left: 250 },
     width = 1080 - margin.right - margin.left,
     height = 700 - margin.top - margin.bottom;
